@@ -1,0 +1,23 @@
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    list-style-type: none;
+    padding: 5px 15px;
+    font-size: 18px;
+  }
+  li:hover {
+    background-color: rgb(254, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Natuaral language proccessor</title>
+  </head>
+
+  <body>
+    <div class="mainContainer">
+      <header>
+        <nav>
+          <div class="logo">Zak<span>NLP</span></div>
+          <div id="navLinks">
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Contacts</li>
+              <li>Login</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <h1>Enter a URL of anarticle/blog to see the sentiment</h1>
+        <section>
+          <form class="">
+            <input
+              id="inputURL"
+              type="text"
+              name="input"
+              value="https://webpack.js.org/guides/asset-modules/"
+              placeholder="Enter a URL here..."
+              required
+            />
+            <input id="submit" type="button" name="button" value="submit" />
+          </form>
+        </section>
+
+        <section class="result">
+          <strong>Form Results:</strong>
+          <div id="results">
+            <p class="aggreement"></p>
+            <p class="confidence"></p>
+            <p class="subjectivity"></p>
+            <p class="irony"></p>
+            <p class="text"></p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div>
+          <div class="logo">Zak<span>NLP</span></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            voluptates id ut ,<br />
+            sunt numquam nemo, laborum ad rerum architecto in, fuga ipsum magni
+            veritatis <br />
+            eius harum incidunt, blanditiis quasi eveniet.
+          </p>
+        </div>
+        <div class="copyright">@copyrights</div>
+      </footer>
+    </div>
+    <!-- <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script> -->
+  </body>
+</html>
