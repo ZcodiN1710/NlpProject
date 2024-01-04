@@ -6,11 +6,11 @@ const handleSubmit = () => {
     eo.preventDefault();
     const inputValue = inputEl.value;
     console.log(inputValue);
-    postInputVlue("http://localhost:8000/inputValue", { url: inputValue });
+    postInputVlue("http://localhost:3000/inputValue", { url: inputValue });
   });
 };
-module.exports =  handleSubmit;
-// export  {handleSubmit};
+module.exports =  handleSubmit();
+// export default  handleSubmit();
 
 const postInputVlue = async (url = "", formData = {}) => {
   const response = await fetch(url, {
@@ -36,9 +36,9 @@ const postInputVlue = async (url = "", formData = {}) => {
     const irony = (document.querySelector(
       ".irony"
     ).innerHTML = `Irony: ${formData.irony}`);
-    const text = (document.querySelector(
-      ".text"
-    ).innerHTML = `Text: ${formData.Text}`);
+    // const text = (document.querySelector(
+    //   ".text"
+    // ).innerHTML = `Text: ${formData.Text}`);
   } catch (error) {
     console.log(error);
   }

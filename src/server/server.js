@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(express.static("dist"));
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

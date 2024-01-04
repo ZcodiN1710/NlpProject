@@ -2,5 +2,5 @@ import './Styles/allStyles.scss'
 // import './JS/formHandler'
 import handleSubmit from'./JS/formHandler'
 
-handleSubmit()
+// handleSubmit()
 // alert("I exist")

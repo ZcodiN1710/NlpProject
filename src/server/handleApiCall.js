@@ -6,13 +6,13 @@ const handleApiCall = async (url, key) => {
   const fetchData = await fetch(fullApiCall);
   const responseData = await fetchData.json();
   const { agreement, subjectivity, confidence, irony } = responseData;
-  const Text = responseData.sentence_list[0].segment_list[0].text;
+  // const Text = responseData.sentence_list[0].segment_list[0].text;
   const results = {
     agreement,
     subjectivity,
     confidence,
     irony,
-    Text,
+    // Text,
   };
   return results;
 };
