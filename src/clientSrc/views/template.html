@@ -23,22 +23,21 @@
 
       <main>
         <h1>Enter a URL of anarticle/blog to see the sentiment</h1>
+        <small>Enter a correct input</small>
         <section>
           <form class="">
             <input
               id="inputURL"
               type="text"
               name="input"
-              value="https://webpack.js.org/guides/asset-modules/"
               placeholder="Enter a URL here..."
-              required
             />
             <input id="submit" type="button" name="button" value="submit" />
           </form>
         </section>
 
         <section class="result">
-          <strong>Form Results:</strong>
+          <strong>Form Results: <span>Enter a correct url to see accurate results below:</span></strong>
           <div id="results">
             <p class="aggreement"></p>
             <p class="confidence"></p>

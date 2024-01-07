@@ -1,6 +1,6 @@
 import './Styles/allStyles.scss'
 // import './JS/formHandler'
-import handleSubmit from'./JS/formHandler'
+import {handleSubmit} from'./JS/formHandler'
 
-// handleSubmit()
+export default handleSubmit()
 // alert("I exist")

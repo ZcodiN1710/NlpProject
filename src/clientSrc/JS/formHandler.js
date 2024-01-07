@@ -1,16 +1,16 @@
 
+
 const handleSubmit = () => {
   const submitBtn = document.getElementById("submit");
   submitBtn.addEventListener("click", (eo) => {
-    const inputEl = document.getElementById("inputURL");
     eo.preventDefault();
-    const inputValue = inputEl.value;
-    console.log(inputValue);
-    postInputVlue("http://localhost:3000/inputValue", { url: inputValue });
+    const inputEl = document.getElementById("inputURL");
+    inputValidation()
+    postInputVlue("http://localhost:3000/inputValue", { url: inputEl.value });
   });
 };
-module.exports =  handleSubmit();
-// export default  handleSubmit();
+
+module.exports =  {handleSubmit};
 
 const postInputVlue = async (url = "", formData = {}) => {
   const response = await fetch(url, {
@@ -36,10 +36,23 @@ const postInputVlue = async (url = "", formData = {}) => {
     const irony = (document.querySelector(
       ".irony"
     ).innerHTML = `Irony: ${formData.irony}`);
-    // const text = (document.querySelector(
-    //   ".text"
-    // ).innerHTML = `Text: ${formData.Text}`);
+    const text = (document.querySelector(
+      ".text"
+    ).innerHTML = `Text: ${formData.Text}`);
   } catch (error) {
     console.log(error);
   }
 };
+
+const inputValidation = () => {
+  const smallEl = document.querySelector("small");
+const spanEl = document.querySelector("strong span");
+const inputEl = document.getElementById("inputURL");
+  if(inputEl.value === ""){
+    smallEl.style.display="block"
+    spanEl.style.display="block"
+  } if(inputEl.value)  {
+    smallEl.style.display="none"
+    spanEl.style.display="none"
+  }
+}

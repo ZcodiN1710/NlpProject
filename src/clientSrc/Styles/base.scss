@@ -43,6 +43,12 @@ input {
 #submit:hover {
   background-color: rgb(254, 0, 0);
 }
+.disableBtn {
+   cursor: not-allowed;
+}
+.disableBtn:hover{
+  background-color: grey;
+}
 .result {
   margin-top: 30px;
   font-size: 18px;
@@ -58,7 +64,13 @@ input {
   margin: 20px 0px;
   font-size: 18px;
 }
-// #results p{
-//   margin: 0 auto;
-//   background-color: rgba(255, 255, 255, .5)
-// }
+small{
+  display: none;
+  color: red;
+  margin-left: 26px;
+}
+strong span{
+  display: none;
+  color: red;
+  font-size: 14px;
+}
